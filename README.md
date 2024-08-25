@@ -14,7 +14,6 @@ Cozinha Dona Ge é um site de receitas culinárias que oferece uma variedade de 
 1. Clone este repositório
 2. Abra o arquivo `index.html` em seu navegador web
 3. Explore as diferentes seções do site
-4. Use o formulário "Envie sua Receita" para adicionar novas receitas
 
 ## Tecnologias Utilizadas
 
