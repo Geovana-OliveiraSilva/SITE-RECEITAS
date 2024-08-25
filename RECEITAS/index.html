@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Cozinha Dona Ge - Receitas Deliciosas</title>
+    </head>
+    <body>
+        <header>
+            <div class="container"
+                style="display: flex; justify-content: space-between; align-items: center;">
+                <div class="logo">Cozinha Dona Ge</div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#categorias">Categorias</a></li>
+                        <li><a href="#receita-destaque">Receita em
+                                Destaque</a></li>
+                        <li><a href="#enviar-receita">Enviar Receita</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>Cozinha Dona Ge</h1>
+                <p>Descubra receitas deliciosas e fáceis de fazer para todas as
+                    ocasiões</p>
+            </div>
+        </section>
+
+        <main class="container">
+            <section id="categorias">
+                <h2>Categorias de Receitas</h2>
+                <div class="recipe-grid">
+                    <div class="recipe-card">
+                        <img src="./img/entrada.jpg" alt="Entradas">
+                        <div class="recipe-card-content">
+                            <a href="entradas.html">
+                                <h3>Entradas</h3>
+                            </a>
+                            <p>Deliciosas opções para começar sua refeição</p>
+                        </div>
+                    </div>
+                    <div class="recipe-card">
+
+                        <img src="./img/prato-principal.jpg"
+                            alt="Pratos Principais">
+                        <div class="recipe-card-content">
+                            <a href="pratos-principais.html">
+                                <h3>Pratos Principais</h3>
+                            </a>
+                            <p>Receitas saborosas para o prato principal</p>
+                        </div>
+
+                    </div>
+                    <div class="recipe-card">
+                        <img src="./img/Taca-Sobremesa.jpg" alt="Sobremesas">
+                        <div class="recipe-card-content">
+                            <a href="sobremesas.html">
+                                <h3>Sobremesas</h3>
+                            </a>
+                            <p>Doces irresistíveis para finalizar sua
+                                refeição</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="receita-destaque">
+                <h2>Receita em Destaque</h2>
+                <div class="featured-recipe">
+                    <img src="./img/receita-de-risoto-de-cogumelos.jpg"
+                        alt="Receita em Destaque">
+                    <div class="featured-recipe-content">
+                        <h3>Risoto de Cogumelos</h3>
+                        <div class="recipe-details">
+                            <span>Tempo de preparo: 40 minutos</span>
+                            <span>Porções: 4</span>
+                        </div>
+                        <h4>Ingredientes:</h4>
+                        <ul class="ingredients-list">
+                            <li>300g de arroz arbóreo</li>
+                            <li>200g de cogumelos variados</li>
+                            <li>1 cebola picada</li>
+                            <li>2 dentes de alho picados</li>
+                            <li>1/2 xícara de vinho branco seco</li>
+                            <li>4 xícaras de caldo de legumes quente</li>
+                            <li>50g de manteiga</li>
+                            <li>50g de queijo parmesão ralado</li>
+                            <li>Sal e pimenta a gosto</li>
+                            <li>Azeite de oliva</li>
+                        </ul>
+                        <h4>Modo de Preparo:</h4>
+                        <ol class="instructions-list">
+                            <li>Em uma panela, aqueça o azeite e refogue a
+                                cebola e o alho até ficarem transparentes.</li>
+                            <li>Adicione os cogumelos e refogue por alguns
+                                minutos.</li>
+                            <li>Acrescente o arroz e mexa bem para envolver os
+                                grãos com o azeite.</li>
+                            <li>Despeje o vinho branco e mexa até evaporar.</li>
+                            <li>Comece a adicionar o caldo de legumes, uma
+                                concha por vez, mexendo constantemente.</li>
+                            <li>Continue adicionando o caldo e mexendo até o
+                                arroz ficar al dente (cerca de 18-20
+                                minutos).</li>
+                            <li>Retire do fogo e adicione a manteiga e o queijo
+                                parmesão. Misture bem.</li>
+                            <li>Tempere com sal e pimenta a gosto.</li>
+                            <li>Sirva imediatamente, decorando com cogumelos
+                                frescos e salsinha, se desejar.</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <section id="enviar-receita">
+                <h2>Envie sua Receita</h2>
+                <form id="recipe-form">
+                    <label for="recipe-name">Nome da Receita:</label>
+                    <input type="text" id="recipe-name" name="recipe-name"
+                        required>
+
+                    <label for="ingredients">Ingredientes:</label>
+                    <textarea id="ingredients" name="ingredients" rows="5"
+                        required></textarea>
+
+                    <label for="instructions">Modo de Preparo:</label>
+                    <textarea id="instructions" name="instructions" rows="5"
+                        required></textarea>
+
+                    <label for="prep-time">Tempo de Preparo (em
+                        minutos):</label>
+                    <input type="number" id="prep-time" name="prep-time"
+                        required>
+
+                    <label for="servings">Número de Porções:</label>
+                    <input type="number" id="servings" name="servings" required>
+
+                    <button type="submit">Enviar Receita</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 Cozinha Dona Ge. Todos os direitos
+                    reservados.</p>
+            </div>
+        </footer>
+    </body>
+</html>
+<script src="./js/script.js"></script>
